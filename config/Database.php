@@ -5,10 +5,10 @@
         protected static $settings = Array(
             "mysql" => Array(
                     'driver' => 'mysql',
-                    'host' => 'localhost',
-                    'username' => 'root',
+                    'host' => '172.16.48.210',
+                    'username' => 'apolo',
                     'database' => 'sgavapp',
-                    'password' => '123456',
+                    'password' => '@pol0Adm1n$',
                     'collation' => 'utf8mb4_unicode_ci',
                     'flags' => [
                         // Turn off persistent connections
@@ -25,10 +25,10 @@
                 ),
             "psql" => array(
                         'driver' => 'pgsql',
-                        'host' => 'localhost',
-                        'username' => 'postgres',
-                        'database' => 'mitienda',
-                        'password' => '123456',
+                        'host' => '172.16.48.210',
+                        'username' => 'apolo',
+                        'database' => 'sgavapp',
+                        'password' => '@pol0Adm1n$',
                         'flags' => [
                             // Turn off persistent connections
                             \PDO::ATTR_PERSISTENT => false,

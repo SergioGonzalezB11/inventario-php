@@ -40,6 +40,13 @@
             $stmt->bindParam(':id', $id);
             $stmt->execute();
         }
+        public function updateData($data){
+            $sql = "UPDATE countries SET name_country = :name_country where id_country = :id";
+            $stmt= self::$conn->prepare($sql);
+            $stmt->bindParam(':name_country', $data['name_country']);
+            $stmt->bindParam(':id', $data['id_country']);
+            $stmt->execute();
+        }
         public static function setConn($connBd){
             self::$conn = $connBd;
         }
