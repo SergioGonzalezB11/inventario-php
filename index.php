@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php 
+<?php 
         require_once 'app.php';
-    ?>
-</body>
-</html>
+        include_once __DIR__.'/Templates/header.php';
+?>
+<main>
+
+</main>
+<?php 
+        include_once __DIR__.'/view/Country/regcountry.php';
+?>
+<?php 
+        include_once __DIR__.'/view/Country/selectcountry.php';
+?>
+<?php 
+        include_once __DIR__.'/view/Country/lstpaises.php';
+?>
+<?php 
+        include_once __DIR__.'/view/Country/lstcountry.php';
+?>
+<?php 
+        include_once __DIR__.'/Templates/footer.php';
+?>
+

@@ -5,10 +5,10 @@
         protected static $settings = Array(
             "mysql" => Array(
                     'driver' => 'mysql',
-                    'host' => '172.16.48.230',
-                    'username' => 'apolo',
+                    'host' => 'localhost',
+                    'username' => 'root',
                     'database' => 'sgavapp',
-                    'password' => '@pol0Adm1n$',
+                    'password' => '123456',
                     'collation' => 'utf8mb4_unicode_ci',
                     'flags' => [
                         // Turn off persistent connections
@@ -51,7 +51,6 @@
             $dsn = "{$dbConfig['driver']}:host={$dbConfig['host']};dbname={$dbConfig['database']}";
             try{
                 $this->conn = new \PDO($dsn, $dbConfig['username'], $dbConfig['password'], $dbConfig['flags']);
-                echo "okkkkk";
             }catch(\PDOException $exception){
                 $error=[[
                     'error' => $exception->getMessage(),

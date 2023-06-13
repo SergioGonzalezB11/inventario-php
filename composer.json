@@ -8,11 +8,13 @@
             "email": "131613955+trainingLeader@users.noreply.github.com"
         }
     ],
-    "require": {},
+    "require": {
+    },
     "autoload":{
         "psr-4":{
             "App\\": "./config",
-            "Models\\": "./models"
+            "Models\\": "./models",
+            "Controllers\\": "./controllers"
         }
     }
 }
