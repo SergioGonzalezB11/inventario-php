@@ -17,6 +17,7 @@
         include_once __DIR__.'/view/Country/lstcountry.php';
 ?>
 </main>
+
 <?php 
         include_once __DIR__.'/Templates/footer.php';
 ?>
